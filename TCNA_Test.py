@@ -21,8 +21,7 @@ class TwoClickNetAssign(pcbnew.ActionPlugin):
         #app =  wx.GetApp()
         #wx.MessageDialog(None, "Test", str(app), wx.OK | wx.ICON_INFORMATION).ShowModal()
 
-        self.window.Bind(wx.EVT_CHAR_HOOK, self.onKey)
-        #self.window.Bind(wx.EVT_LEFT_UP, self.onLeft)  
+        self.window.Bind(wx.EVT_CHAR_HOOK, self.onKey) 
 
 
     def onKey(self, event):
